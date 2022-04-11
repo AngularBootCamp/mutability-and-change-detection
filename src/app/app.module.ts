@@ -9,9 +9,9 @@ import { TodoListOnpushStrategyComponent } from './todo-list/todo-list-onpush-st
 @NgModule({
   declarations: [
     AppComponent,
+    TodoItemDetailComponent,
     TodoListDefaultStrategyComponent,
-    TodoListOnpushStrategyComponent,
-    TodoItemDetailComponent
+    TodoListOnpushStrategyComponent
   ],
   imports: [BrowserModule],
   bootstrap: [AppComponent]

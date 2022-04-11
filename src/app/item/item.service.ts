@@ -33,8 +33,8 @@ export class ItemService {
 
   toggleItem(itemIndex: number) {
     // Mutate State
-    this.itemList1[itemIndex].completed = !this.itemList1[itemIndex]
-      .completed;
+    this.itemList1[itemIndex].completed =
+      !this.itemList1[itemIndex].completed;
 
     // Immutable State
     this.itemList2 = [...this.itemList2];
