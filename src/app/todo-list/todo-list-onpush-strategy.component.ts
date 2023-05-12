@@ -9,7 +9,7 @@ import {
 import { Item } from '../item/item-types';
 
 @Component({
-  selector: 'todo-list-onpush-strategy',
+  selector: 'app-todo-list-onpush-strategy',
   templateUrl: './todo-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })

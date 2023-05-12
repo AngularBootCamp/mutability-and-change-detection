@@ -1,17 +1,8 @@
-<section class="card todo">
-  <div class="card-content">
-    <div class="card-title">Todo List</div>
-    <ul class="collection" style="height: 140px; overflow-y: auto">
-      <li
-        class="collection-item"
-        *ngFor="let todo of todoItems; index as i"
-        style="cursor: pointer"
-      >
-        <item-detail
-          [item]="todo"
-          (toggle)="toggleItem.emit(i)"
-        ></item-detail>
-      </li>
-    </ul>
-  </div>
-</section>
+<ul class="collection todo-list">
+  <li *ngFor="let todo of todoItems; index as i">
+    <app-item-detail
+      [item]="todo"
+      (toggle)="toggleItem.emit(i)"
+    ></app-item-detail>
+  </li>
+</ul>

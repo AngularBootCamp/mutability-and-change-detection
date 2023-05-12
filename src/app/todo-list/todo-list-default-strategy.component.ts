@@ -8,7 +8,7 @@ import {
 import { Item } from '../item/item-types';
 
 @Component({
-  selector: 'todo-list-default-strategy',
+  selector: 'app-todo-list-default-strategy',
   templateUrl: './todo-list.component.html'
   // changeDetection: ChangeDetectionStrategy.Default
 })

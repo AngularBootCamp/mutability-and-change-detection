@@ -10,7 +10,7 @@ import {
 import { Item } from '../item/item-types';
 
 @Component({
-  selector: 'item-detail',
+  selector: 'app-item-detail',
   templateUrl: './todo-item-detail.component.html',
   changeDetection: ChangeDetectionStrategy.Default
 })

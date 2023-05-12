@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'layout';
+
+.todo-lists {
+  @include layout.two-across;
+}
+
+.todo-list {
+  height: 5rem;
+  overflow-y: auto;
+
+  li {
+    cursor: pointer;
+  }
+}
