@@ -1,3 +1,4 @@
+import { NgFor } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -8,10 +9,14 @@ import {
 
 import { Item } from '../item/item-types';
 
+import { TodoItemDetailComponent } from './todo-item-detail.component';
+
 @Component({
   selector: 'app-todo-list-onpush-strategy',
   templateUrl: './todo-list.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [NgFor, TodoItemDetailComponent]
 })
 export class TodoListOnpushStrategyComponent {
   @Input() todoItems: Item[] = [];

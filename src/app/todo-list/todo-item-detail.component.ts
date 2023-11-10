@@ -12,7 +12,8 @@ import { Item } from '../item/item-types';
 @Component({
   selector: 'app-item-detail',
   templateUrl: './todo-item-detail.component.html',
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.Default,
+  standalone: true
 })
 export class TodoItemDetailComponent {
   @Input() item: Item | undefined;
