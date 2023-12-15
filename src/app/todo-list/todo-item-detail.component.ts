@@ -16,7 +16,7 @@ import { Item } from '../item/item-types';
   standalone: true
 })
 export class TodoItemDetailComponent {
-  @Input() item: Item | undefined;
+  @Input({ required: true }) item: Item | undefined;
   @Output() toggle = new EventEmitter<void>();
 
   @HostListener('click')

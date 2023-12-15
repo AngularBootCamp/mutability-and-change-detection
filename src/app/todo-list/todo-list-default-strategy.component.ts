@@ -18,6 +18,6 @@ import { TodoItemDetailComponent } from './todo-item-detail.component';
   imports: [NgFor, TodoItemDetailComponent]
 })
 export class TodoListDefaultStrategyComponent {
-  @Input() todoItems: Item[] = [];
+  @Input({ required: true }) todoItems!: Item[];
   @Output() toggleItem = new EventEmitter<number>();
 }

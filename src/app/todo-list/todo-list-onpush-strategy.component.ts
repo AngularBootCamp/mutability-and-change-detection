@@ -19,6 +19,6 @@ import { TodoItemDetailComponent } from './todo-item-detail.component';
   imports: [NgFor, TodoItemDetailComponent]
 })
 export class TodoListOnpushStrategyComponent {
-  @Input() todoItems: Item[] = [];
+  @Input({ required: true }) todoItems!: Item[];
   @Output() toggleItem = new EventEmitter<number>();
 }
