@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import {
   Component,
   EventEmitter,
@@ -15,7 +14,7 @@ import { TodoItemDetailComponent } from './todo-item-detail.component';
   templateUrl: './todo-list.component.html',
   // changeDetection: ChangeDetectionStrategy.Default
   standalone: true,
-  imports: [NgFor, TodoItemDetailComponent]
+  imports: [TodoItemDetailComponent]
 })
 export class TodoListDefaultStrategyComponent {
   @Input({ required: true }) todoItems!: Item[];

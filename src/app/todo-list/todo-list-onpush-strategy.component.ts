@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -16,7 +15,7 @@ import { TodoItemDetailComponent } from './todo-item-detail.component';
   templateUrl: './todo-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [NgFor, TodoItemDetailComponent]
+  imports: [TodoItemDetailComponent]
 })
 export class TodoListOnpushStrategyComponent {
   @Input({ required: true }) todoItems!: Item[];
